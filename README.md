@@ -27,30 +27,6 @@ Dataframe is a size-mutable structure that means data can be added or deleted fr
 Data is available in various forms and types like CSV, SQL table, JSON, or Python structures like list, dict etc. We need to convert all such different data formats into a DataFrame so that we can use pandas libraries to analyze such data efficiently.
 
 To create DataFrame, we can use either the DataFrame constructor or pandas built-in functions. Below are some examples.
-### DataFrame constructor
-
-```python
-pandas.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
-```#### Parameters:
-
-* **`data`**: It takes input **`dict`**, **`list`**, **`set`**, **`ndarray`**, **`iterable`**, or DataFrame. If the input is not provided, then it creates an empty DataFrame. The resultant column order follows the insertion order.
-
-
-* **`index`**: (Optional) It takes the list of row index for the DataFrame. The default value is a range of integers 0, 1,…n.
-
-
-* **`columns`** : (Optional) It takes the list of columns for the DataFrame. The default value is a range of integers 0, 1,…n.
-
-
-* **`dtype`**: (Optional) By default, It infers the data type from the data, but this option applies any specific data type to the whole DataFrame.
-
-
-* **`copy`**: (Optional) Copy data from inputs. Boolean, Default False. Only affects DataFrame or 2D array-like inputs
-### Dataframe from dict
-
-When we have data in **`dict`** or any default data structures in Python, we can convert it into DataFrame using the DataFrame constructor.
-
-To construct a DataFrame from a **`dict`** object, we can pass it to the DataFrame constructor **`pd.DataFrame(dict)`**. It creates DataFrame using, where **`dict`** keys will be column labels, and **`dict`** values will be the columns’ data. We can also use **`DataFrame.from_dict()`** function to **[Create DataFrame from dict](**.
 
 **Key and Imports:**
 
